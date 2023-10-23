@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
+
+::-webkit-scrollbar {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d1ed24;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::selection {
+    background: #77880f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #060606;
+    color: #ffffff;
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Jura', sans-serif;
+    font-weight: 400;
+}
+
+main {
+    padding: 0 25px;
+}
+
+a {
+    color: #ffffff;
+}
+
+span {
+    color: #d1ed24;
+}
+
+.title-container {
+    padding-top: 2.5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.title-text {
+    font-size: 40px;
+    color: #d1ed24;
+}
+
+.title-group {
+    color: #d1ed24;
+}
+
+.date-container {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25px;
+}
+
+.time-container {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 27px;
+    color: #d1ed24;
+}
+
+.days-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.day-cont {
+    flex: 0 0 calc(32% - 20px); /* Змінено ширину на 33.33% */
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    background: #000000;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    border: 2px solid #d1ed24;
+    text-align: center;
+}
+
+.day-item {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.lessons-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    background: #0e0e0e;
+}
+
+.day-cont:nth-child(6) > div > div {
+    justify-content: center;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.el-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background: #0e0e0e; */
+    padding: 7px;
+    border: solid 2px #d1ed24;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.el-item, .type {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    /* color: #77880f; */
+    background: #0e0e0e;
+    padding: 1px;
+}
+
+.info-text {
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+/* 
+.lessons-container:nth-child(6) {
+    text-align: center;
+} */
